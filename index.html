@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App | Prodigy InfoTech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="weather-app">
+    <h1>Weather App</h1>
+    <p class="subtitle">Check the weather anywhere</p>
+
+    <form id="weatherForm">
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Enter city name..."
+        required
+      >
+      <button type="submit">Search</button>
+    </form>
+
+    <button id="locationBtn" class="location-btn">
+      Use My Location
+    </button>
+
+    <p id="message" role="status"></p>
+
+    <section id="weatherCard" class="weather-card" hidden>
+      <h2 id="cityName">City</h2>
+      <div id="weatherIcon" class="weather-icon">🌤️</div>
+      <h3 id="temperature">--°C</h3>
+      <p id="condition">Weather condition</p>
+
+      <div class="details">
+        <div class="detail">
+          <span>Feels Like</span>
+          <strong id="feelsLike">--°C</strong>
+        </div>
+        <div class="detail">
+          <span>Humidity</span>
+          <strong id="humidity">--%</strong>
+        </div>
+        <div class="detail">
+          <span>Wind Speed</span>
+          <strong id="windSpeed">-- km/h</strong>
+        </div>
+      </div>
+      <p class="credit">Weather data by Open-Meteo</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

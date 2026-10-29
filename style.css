@@ -1,0 +1,148 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+.weather-app {
+  width: 100%;
+  max-width: 440px;
+  text-align: center;
+  padding: 30px 24px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 24px;
+  background: rgba(255,255,255,0.10);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  backdrop-filter: blur(12px);
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #d6e5eb;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  width: 100%;
+  min-width: 0;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  background: #00c6a7;
+  color: #062b30;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #48f0d5;
+}
+
+.location-btn {
+  margin-top: 12px;
+  width: 100%;
+  background: #ffffff;
+  color: #203a43;
+}
+
+#message {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #ffe3a3;
+}
+
+.weather-card {
+  margin-top: 20px;
+}
+
+.weather-card h2 {
+  font-size: 24px;
+}
+
+.weather-icon {
+  font-size: 65px;
+  margin: 10px 0;
+}
+
+#temperature {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+#condition {
+  font-size: 18px;
+  color: #d6e5eb;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.detail {
+  background: rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 14px 5px;
+}
+
+.detail span {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: #d6e5eb;
+}
+
+.detail strong {
+  font-size: 14px;
+}
+
+.credit {
+  font-size: 11px;
+  color: #d6e5eb;
+  margin-top: 20px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 380px) {
+  .weather-app {
+    padding: 24px 14px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+}
